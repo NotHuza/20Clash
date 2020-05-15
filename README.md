@@ -11,8 +11,5 @@ To connect to your server, you need a custom client. Here the only solution is t
 Just edit the IP in the frida script (```/lib/armeabi-v7a/libgg.config.so```)
 ```{"interaction":{"type":"script","path":"libscript.so","on_change":"reload","parameters":{"redirectHost":"YOUR_IP"}}}```
 
-More soon™️
-
-
-## Friendly reminder
+### Friendly reminder
 The server is in a very early state. Right now, it is NOT recommended to run this on a production environment. Please not open issues about missing features, i'm well aware of this.
