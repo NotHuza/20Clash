@@ -16,14 +16,19 @@ namespace ClashofClans.Protocol.Messages.Client.Home
         public override void Decode()
         {
             UserId = Reader.ReadLong();
+
+            var hasHomeId = Reader.ReadBoolean();
+
+            if (hasHomeId)
+                Reader.ReadLong();
         }
 
         public override async void Process()
         {
-            await new AvatarProfileMessage(Device)
+            /*await new AvatarProfileMessage(Device)
             {
                 Player = await Resources.Players.GetPlayerAsync(UserId)
-            }.SendAsync();
+            }.SendAsync();*/
         }
     }
 }

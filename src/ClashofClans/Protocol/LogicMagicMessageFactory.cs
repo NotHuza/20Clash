@@ -20,9 +20,10 @@ namespace ClashofClans.Protocol
                 //{10113, typeof(SetDeviceTokenMessage)},
                 /*{10905, typeof(NewsSeenMessage)},*/
                 //{14101, typeof(GoHomeMessage)},
-                {11186, typeof(AskForAvatarProfileMessage)},
-                //{11734, typeof()},
+                {11186, typeof(AskForAllianceDataMessage)},
+                {11734, typeof(AskForAvatarProfileMessage)},
                 {12906, typeof(EndClientTurnMessage)},
+                // 13708 - Contains a key
                 /*{14401, typeof(AskForAllianceRankingListMessage)},
                 {14403, typeof(AskForAvatarRankingListMessage)},
                 {14404, typeof(AskForAvatarLocalRankingListMessage)},

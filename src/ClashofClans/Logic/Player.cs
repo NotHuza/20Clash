@@ -202,8 +202,8 @@ namespace ClashofClans.Logic
 
             packet.WriteInt(1);
             packet.WriteInt(28000003);
-
             packet.WriteInt(3);
+
             packet.WriteInt(0);
 
             // Tutorials | 10 = Set Name - 35 All tutorials 
@@ -231,7 +231,104 @@ namespace ClashofClans.Logic
             packet.WriteInt(0);
             packet.WriteInt(0);
 
-            packet.WriteInt(0); // 97
+            packet.WriteInt(97); // Count
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(1);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(255);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(0);
+            packet.WriteInt(1);
+            packet.WriteInt(20);
 
             packet.WriteInt(0);
             packet.WriteInt(0);

@@ -15,6 +15,7 @@ namespace ClashofClans.Protocol.Commands.Client
         {
             BuildingId = Reader.ReadInt();
             Reader.ReadInt();
+            Reader.ReadInt();
 
             base.Decode();
         }

@@ -1,5 +1,4 @@
 ﻿using ClashofClans.Logic;
-using ClashofClans.Protocol.Messages.Server;
 using DotNetty.Buffers;
 
 namespace ClashofClans.Protocol.Commands.Client
@@ -19,7 +18,7 @@ namespace ClashofClans.Protocol.Commands.Client
             base.Decode();
         }
 
-        public override async void Process()
+        public override void Process()
         {
             var home = Device.Player.Home;
             var objects = home.GameObjectManager;
@@ -30,18 +29,16 @@ namespace ClashofClans.Protocol.Commands.Client
             {
                 var building = buildings[index];
 
+                Logger.Log($"Collected: {building.ResourceProductionComponent.AvailableToCollect}", GetType(), Logger.ErrorLevel.Debug);
+
                 home.ComponentManager.CollectResources(building.Data);
 
                 var resourceProductionComponent = building.ResourceProductionComponent;
                 var resourceProduces = resourceProductionComponent.ProducesResource;
                 var maxStoredResource =
-                    home.ComponentManager.MaxStoredResource(resourceProductionComponent.ProducesResource);
+                    home.ComponentManager.MaxStoredResource(resourceProduces);
 
-                await new GlobalChatLineMessage(Device)
-                {
-                    Message =
-                        $"Storage used: {home.Resources.GetCount(resourceProductionComponent.ResourceData.GetGlobalId())}, Available: {maxStoredResource} - {resourceProduces}"
-                }.SendAsync();
+                //Logger.Log($"Storage used: {home.Resources.GetCount(resourceProductionComponent.ResourceData.GetGlobalId())}, Available: {maxStoredResource} - {resourceProduces}", GetType(), Logger.ErrorLevel.Debug);
             }
             else
             {

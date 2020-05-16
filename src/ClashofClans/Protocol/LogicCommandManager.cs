@@ -35,7 +35,8 @@ namespace ClashofClans.Protocol
                 {597, typeof(LogicEventsSeenCommand)},
                 {603, typeof(LogicEndCombatCommand)},
                 {705, typeof(LogicPlaceHeroCommand)},
-                {800, typeof(LogicMatchmakingCommand)}
+                {800, typeof(LogicMatchmakingCommand)},
+                {802, typeof(LogicAcceptChatRulesCommand)}
             };
         }
     }

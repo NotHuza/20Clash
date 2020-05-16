@@ -17,6 +17,10 @@ namespace ClashofClans.Protocol.Commands.Client
             BuildingId = Reader.ReadInt();
             UseAltResource = Reader.ReadBoolean();
 
+            Reader.ReadByte();
+            Reader.ReadByte();
+            Reader.ReadByte();
+
             base.Decode();
         }
 

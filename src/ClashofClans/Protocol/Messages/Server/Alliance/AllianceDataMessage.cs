@@ -12,7 +12,47 @@ namespace ClashofClans.Protocol.Messages.Server
 
         public override void Encode()
         {
-            Writer.WriteHex("00000000000000010000000355435300000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000100000001010000000000000000000000AD57656C636F6D65210A54686973206973206120706C616365686F6C64657220636C616E20796F752063616E2075736520746F207479706520636F6D6D616E647320696E20636C616E20636861742E2054797065202F68656C7020746F206765742061206C697374206F6620616C6C20617661696C61626C6520636F6D6D616E64732E20596F752063616E20616C736F206A6F696E2061207265616C20636C616E20617420616E792074696D652E0000000000000000000000000000000000FFFF0000000000");
+            Writer.WriteLong(1); // AllianceId
+            Writer.WriteScString("Test"); // Name
+            Writer.WriteInt(0); // Badge
+            Writer.WriteInt(1); // Type
+            Writer.WriteInt(0); // Members
+
+            Writer.WriteInt(1000); // Score
+            Writer.WriteInt(500); // DuelScore
+
+            Writer.WriteInt(0); // RequiredScore
+            Writer.WriteInt(0); // RequiredDuelScore
+
+            Writer.WriteInt(0); // RequiredTownhallLevel
+
+            Writer.WriteInt(1); // WonWarCount
+            Writer.WriteInt(2); // LostWarCount
+            Writer.WriteInt(3); // DrawWarCount
+
+            Writer.WriteInt(0); // Region
+
+            Writer.WriteInt(0); // WarFrequency
+            Writer.WriteInt(0); 
+
+            Writer.WriteInt(0); // ExpPoints
+            Writer.WriteInt(12); // ExpLevel
+
+            Writer.WriteInt(0); // WarWinStreak
+
+            Writer.WriteInt(16777216);
+            Writer.WriteInt(16842752);
+            Writer.WriteInt(0); // CWL
+
+            Writer.WriteBoolean(true); // PublicWarLog ?
+            Writer.WriteBoolean(true); // FriendlyWar ?
+
+            Writer.WriteScString("Test");
+            Writer.WriteBoolean(false);
+            Writer.WriteInt(0);
+            Writer.WriteInt(0);
+            Writer.WriteInt(0);
+            Writer.WriteInt(0);
         }
     }
 }
