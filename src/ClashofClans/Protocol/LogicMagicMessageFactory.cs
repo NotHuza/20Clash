@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using ClashofClans.Protocol.Messages.Client;
+using ClashofClans.Protocol.Messages.Client.Alliance;
 using ClashofClans.Protocol.Messages.Client.Home;
 using ClashofClans.Protocol.Messages.Client.Login;
 
@@ -26,8 +27,8 @@ namespace ClashofClans.Protocol
                 // 13708 - Contains a key
                 /*{14401, typeof(AskForAllianceRankingListMessage)},
                 {14403, typeof(AskForAvatarRankingListMessage)},
-                {14404, typeof(AskForAvatarLocalRankingListMessage)},
-                {14715, typeof(SendGlobalChatLineMessage)}*/
+                {14404, typeof(AskForAvatarLocalRankingListMessage)},*/
+                {14466, typeof(ChatToAllianceStreamMessage)},
                 {16203, typeof(DebugEventMessage)},
                 {17173, typeof(ChangeAvatarNameMessage)},
             };

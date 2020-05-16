@@ -16,7 +16,7 @@ namespace ClashofClans.Files
                 if (File.Exists("GameAssets/starting_home.json"))
                 {
                     StartingHome = File.ReadAllText("GameAssets/starting_home.json", Encoding.UTF8);
-                    MaxHome = File.ReadAllText("GameAssets/level/townhall8.json", Encoding.UTF8);
+                    MaxHome = File.ReadAllText("GameAssets/level/townhall12.json", Encoding.UTF8);
                 }
                 else
                 {

@@ -239,6 +239,9 @@
     <None Update="GameAssets\level\townhall11.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="GameAssets\level\townhall12.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="GameAssets\level\townhall1v2.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -436,7 +439,6 @@
 
   <ItemGroup>
     <Folder Include="Logic\Home\StreamEntry\Entries\" />
-    <Folder Include="Protocol\Messages\Client\Alliance\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties gameassets_4starting_3home_1json__JsonSchema="http://json-schema.org/draft-04/schema" /></VisualStudio></ProjectExtensions>

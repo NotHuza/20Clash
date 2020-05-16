@@ -13,7 +13,7 @@ namespace ClashofClans.Protocol.Messages.Server
         public override void Encode()
         {
             Writer.WriteLong(1); // AllianceId
-            Writer.WriteScString("Test"); // Name
+            Writer.WriteScString("Inc Inc"); // Name
             Writer.WriteInt(0); // Badge
             Writer.WriteInt(1); // Type
             Writer.WriteInt(0); // Members

@@ -9,11 +9,11 @@ using ClashofClans.Utilities;
 using ClashofClans.Utilities.Netty;
 using DotNetty.Buffers;
 
-namespace ClashofClans.Protocol.Messages.Client
+namespace ClashofClans.Protocol.Messages.Client.Alliance
 {
-    public class SendGlobalChatLineMessage : PiranhaMessage
+    public class ChatToAllianceStreamMessage : PiranhaMessage
     {
-        public SendGlobalChatLineMessage(Device device, IByteBuffer buffer) : base(device, buffer)
+        public ChatToAllianceStreamMessage(Device device, IByteBuffer buffer) : base(device, buffer)
         {
             RequiredState = Device.State.NotDefinied;
         }
@@ -129,9 +129,9 @@ namespace ClashofClans.Protocol.Messages.Client
 
                     case "/status":
                     {
-                        await new GlobalChatLineMessage(Device)
+                        await new LoginFailedMessage(Device)
                         {
-                            Message =
+                            Reason = 
                                 $"OnlinePlayers: {Resources.Players.Count}\nCached Players: {Resources.ObjectCache.CachedPlayers()}\nTotal Players: {await PlayerDb.CountAsync()}\nUptime: {DateTime.UtcNow.Subtract(Resources.StartTime).ToReadableString()}"
                         }.SendAsync();
 
@@ -140,9 +140,9 @@ namespace ClashofClans.Protocol.Messages.Client
 
                     case "/help":
                     {
-                        await new GlobalChatLineMessage(Device)
+                        await new LoginFailedMessage(Device)
                         {
-                            Message =
+                            Reason =
                                 "/status - See the current server status\n/low - Get minimum of resources\n/high - Get max resources\n/gems - Adds 14k gems\n/reset - Reset your village\n/visit - Visit your own village\n/max - Get a max village\n/co - Clear all obstacles\n/skip [seconds] - Skip time"
                         }.SendAsync();
 

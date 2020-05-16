@@ -57,7 +57,7 @@ namespace ClashofClans.Logic
             packet.WriteBoolean(true); // HasAlliance
 
             packet.WriteLong(1);
-            packet.WriteScString("Test");
+            packet.WriteScString("Inc Inc");
             packet.WriteInt(1); // Badge
             packet.WriteInt(1); // Members/Online?
             packet.WriteInt(0); // Members/Online?
