@@ -1,3 +1,4 @@
+Archive go brrr
 # 20Clash ![.NET Core](https://github.com/Incr3dible/20Clash/workflows/.NET%20Core/badge.svg?branch=master)
 A .NET Core Clash of Clans Server for version 13
 
